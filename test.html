@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dcastalia-Exercise</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/camera.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- <link rel="stylesheet" href="css/custom.css"> -->
+	<link rel="stylesheet" href="css/slippry.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="icon" href="images/icons/favicon.png">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	
+	<style>
+
+		.col-xs-5,
+		.col-sm-5,
+		.col-md-5,
+		.col-lg-5 {
+		    position: relative;
+		    min-height: 1px;
+		    padding-right: 20px;
+		    padding-left: 20px;
+		}
+
+		.col-xs-5 {
+		    width: 20%;
+		    float: left;
+		}
+
+
+	.product-title{
+		padding-top: 30px;
+		color: rgb(189,190,192);
+		font-weight: 600;
+		letter-spacing: 2px;
+		line-height: normal;
+	}
+
+	.product-nav{
+		border-bottom: 1px solid rgba(189,190,192,0.6);
+		/*float: left;*/
+		margin-top: 15px;
+		padding: 0;
+		/*padding-top: 20px;*/
+	}
+
+	.product-nav li{
+		list-style: none;
+		display: inline-block;
+		/*padding: 0 25px 0 24px;
+		border-right: 1px solid rgba(189,190,192,0.2)*/
+
+	}
+
+	.product-active{
+		color: #000 !important;
+		/*font-weight: normal !important;*/
+	}
+
+	.product-nav li a{
+		text-decoration: none;
+		margin: 0;
+		letter-spacing: 1px;	
+		color: rgb(189,190,192); 
+		font-family: raleway;
+		font-weight: 600;
+		font-size: 12px;
+	}
+
+	.product-nav li a:hover{
+		color:#000;
+	}
+
+	.product-nav li:before {
+		content: "| "; 
+		padding: 0 25px 0 24px ;
+		color: rgba(189,190,192,0.2);
+		font-size: 30px;
+		}
+	.product-nav li:first-child:before { content: ""; 
+		padding: 0;
+	}	
+
+
+
+
+
+	.products-body{
+		border: 1px solid rgba(189,190,192,0.2);
+		padding: 7px;
+		padding-bottom: 0px;
+		position: static;
+	}	
+
+	.products-body img{
+		width: 99.95%;
+	}
+
+	.products-body p{
+		padding: 30px 10px 30px 10px;
+		font-size: 16px;
+		color: #67ceef;
+	}	
+
+	.max{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		border-left: 1px solid rgba(189,190,192,0.2);
+		border-top: 1px solid rgba(189,190,192,0.2);
+		left: 88%;
+	}
+
+
+	/*style for brand section*/
+
+	#dc-brand{
+		margin-top: 10px;
+		background: url('images/brand_banner.jpg') 50% no-repeat;
+		background-position: bottom;
+	}
+
+	.brand-title{
+		text-align: center;
+		padding-top: 70px;
+		font-size: 65px;
+		font-weight: 400;
+		color:#fff;
+	}
+
+	.brand-subtitle{
+		text-align: center;
+		color: #fff;
+		font-size: 25px;
+	}
+
+	.brand-logo{
+		text-align: center;
+		padding-bottom: 50px;
+	}
+
+	.brand-logo li{
+		list-style: none;
+		display: inline;
+		padding: 50px;
+		
+	}
+
+	.brand-logo li img{
+		margin-top: 40px;
+	}
+
+/*style for footer*/
+
+	footer{
+		border-top: 20px solid #000;
+		background: url('images/footer_pattern.png');
+		height: 450px;
+	}
+
+.address{
+	padding-top: 50px;
+}	
+
+.footer-logo{
+
+	margin-top: 50px;
+}
+
+.f-sub{
+
+	color: rgba(255,255,255,.6);
+	}
+
+span .map{
+	background: url('images/footer/address.png')50% no-repeat;
+	width: 20px;
+	height:20px;
+	padding: 10px;
+
+	
+}	
+i{
+	float: left;
+	/*margin-top: 20px;*/
+}
+.info, .cell{
+	/*margin-top: 28px;*/
+	color: rgba(255,255,255,.3);
+	margin-left: 40px;
+	font-size: 12px;
+	line-height: 20px;
+	/*float: left;*/
+	/*position: absolute;*/
+}
+
+.phone{
+	background: url('images/footer/icon_phone.png')50% no-repeat;
+	width: 20px;
+	height:20px;
+	padding: 10px;
+
+	/*position: relative;*/
+}
+
+.social{
+	margin-top: 20px;
+}
+
+.social-nav li{
+	list-style: none;
+	display: inline;
+	padding-left: 20px;
+}
+
+.social-nav li:first-child{
+	padding-left: 0;
+}
+
+.f-title{
+	color:#8bdbf2;
+	padding-left: 40px;
+	margin-top: 20px;
+}
+
+.b-title{
+	margin-top: 65px;
+	color:#8bdbf2;
+}
+
+.n-title{
+	margin-top: 20px;
+	color:#8bdbf2;
+	padding-left: 40px;
+}
+
+.c-title{
+	margin-top: 30px;
+	color:#8bdbf2;
+	padding-left: 40px;
+}
+
+.p-fnav{
+	color: rgba(255,255,255,.3);
+	
+	line-height: 25px;
+	margin-left: 40px;
+}
+
+.b-fnav{
+	color: rgba(255,255,255,.3);
+	line-height: 25px;
+}
+
+
+.n-fnav{
+	color: rgba(255,255,255,.3);
+	line-height: 25px;
+	padding-left: 40px;
+}
+
+
+.c-fnav{
+	color: rgba(255,255,255,.3);
+	line-height: 25px;
+	padding-left: 40px;
+}
+.fo-search{
+	background: url('images/footer/search_icon.png') 50% no-repeat;
+	width: 20px;
+	height: 20px;
+	padding: 20px;
+}
+
+.foo-search{
+	display: inline;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid rgba(139,219,242,.4);
+	background: transparent;
+}
+
+.foo-search[placeholder]{
+	color:rgb(139,219,242);
+	padding-left: 5px;
+}
+
+.fo-content{
+	margin-top: 20px;
+}
+
+.verticle{
+	border-left: 1px solid rgba(255,255,255,.3);
+	height: 300px;
+	position: absolute;
+	bottom: 20px;
+	left: 300px;
+
+}
+
+hr{
+	border-color: rgba(255,255,255,.3);
+}
+
+.dis li{
+	display: inline;
+	list-style: none;
+	color:rgba(255,255,255,.3);
+	padding: 10px;
+}
+
+
+
+.copy{
+	color:rgba(255,255,255,.3);
+}
+
+
+
+	/*=========Responisve========*/
+	
+		@media (min-width: 768px) {
+		.col-sm-5 {
+		        width: 20%;
+		        float: left;
+		    }
+		}
+		@media (min-width: 992px) {
+		    .col-md-5 {
+		        width: 20%;
+		        float: left;
+		    }
+		}
+		@media (min-width: 1200px) {
+		    .col-lg-5 {
+		        width: 20%;
+		        float: left;
+		    }
+		}
+}
+}
+
+	</style>
+	
+</head>
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="header-top pull-right">
+						<a class="top-search" href=""><img src="images/search.png" alt=""></a>
+						<input type="text" name="search" id="search" placeholder="SEARCH">
+						<img src="images/cart.png" alt=""><span class="badge">2</span>
+					</div> <!-- header top -->
+				</div> <!-- col -->
+			</div> <!-- row -->
+			<div class="row">
+				<!-- <div class="col-sm-2">
+					<img src="images/logo_main.png" class="img-responsive" alt="">
+				</div> --><!-- col -->
+				<div class="col-sm-12">
+					<div class="navbar-wrapper">
+						<div class="navbar navbar" role="navigation">
+							<div class="container">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+										<span class="sr-only"><img src="" alt=""></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a href="" class="navbar-brand"><img src="images/logo_main.png" class="img-responsive" alt=""></a>
+								</div> <!-- navbar-header -->
+								<div class="navbar-collapse collapse">
+									<ul class="nav navbar-nav navbar-right">
+										<li class="active"><a href="product-center.html">PRODUCT CENTER</a></li>
+										<li><a href="#">BRAND</a></li>
+										<li><a href="#">COLLETIONS</a></li>
+										<li><a href="#">ABOUT</a></li>
+										<li><a href="#">NEWS & EVENTS</a></li>
+										<li><a href="#">CONTACT</a></li>
+									</ul>
+								</div> <!-- navbar-collapse -->
+							</div> <!-- container -->
+						</div> <!-- navbar -->
+					</div> <!-- navbar-wrapper --> 
+				</div><!-- col -->
+			</div><!-- row -->
+		</div> <!-- container -->
+	</header><!-- header -->
+	
+	<section class="products">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="product-title">FEATURED PRODUCTS</h3>
+					<ul class="product-nav">
+						<li><a class="product-active" href="#">TRADE CENTER</a></li>
+						<li><a href="#">TILES WORLD</a></li>
+						<li><a href="#">PROTOMA BANGLA</a></li>
+						<li><a href="#">LIFE STYLE</a></li>
+					</ul>
+				</div>
+			</div> <!-- row -->
+			<div class="row p-margin">
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		  <img src="images/products/product_5.jpg" alt=""/>
+						<p>Naham water coloset Gorgious</p>
+			    		<a href="images/products/product_5.jpg" data-lightbox="example-set" data-title="Naham water coloset Gorgious Naham water coloset Gorgious Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div></a>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_4.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<a href="images/products/product_4.jpg" data-lightbox="example-set" data-title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div></a>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_3.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_6.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_1.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			</div> <!-- row -->
+
+			<div class="row p-margin">
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_13.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_12.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_11.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_10.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			    <div class="col-md-5 col-sm-3">
+			    	<div class="products-body">
+			    		<img src="images/products/product_9.jpg" alt="">
+			    		<p>Naham water coloset Gorgious</p>
+			    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+			    	</div> <!-- product body -->
+			    </div> <!-- col -->
+			</div> <!-- row -->
+		</div> <!-- container -->
+	</section> <!-- section -->
+
+	<section id="dc-brand" data-type="background" data-speed="17">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="brand-title">World Class Quality Brand</h1>
+					<p class="brand-subtitle">our vendors energized our brand with top class designed and idea</p>
+					<ul class="brand-logo">
+						<li><img src="images/brand/brand_1.png" alt="Ghore"></li>
+						<li><img src="images/brand/brand_2.png" alt=""></li>
+						<li><img src="images/brand/brand_3.png" alt=""></li>
+						<li><img src="images/brand/brand_4.png" alt=""></li>
+						<li><img src="images/brand/brand_5.png" alt=""></li>
+					</ul>
+				</div> <!-- col -->
+			</div> <!-- row -->
+		</div> <!-- container -->
+	</section> <!-- section -->
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="footer-content">
+					<div class="col-md-3">
+						<img src="images/footer/logo_footer.png" alt="Footer logo" class="footer-logo">
+						<p class="f-sub">Symbol Of Beauty</p>
+						<div class="address">
+							
+							
+							<span><i class="map"></i></span>
+							<p class="info">
+								Tilottoma Trade center <br/>
+								Mosaic, Floor Tiles & <br/>
+								Waterproofing Materials <br/>
+								Address: 67, Bir Uttam C.R. Dutt Road, <br/>
+								Hatirpool, Dhaka-1205
+							</p>
+							<span><i class="phone"></i></span>
+							<p class="cell">g668808, g673432</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="social">
+							<ul class="social-nav">
+								<li><a href=""><img src="images/footer/Social_icon.png" alt=""></a></li>
+								<li><a href=""><img src="images/footer/Social_icon_2.png" alt=""></a></li>
+								<li><a href=""><img src="images/footer/Social_icon_3.png" alt=""></a></li>
+								<li><a href=""><img src="images/footer/Social_icon_4.png" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="fo-content">
+							<p class="f-title">PRODUCT CENTER <sub>&#9660;</sub></p>
+							<p class="p-fnav">
+								Tilottoma Trade Center <br/>
+								Tilottoma Tiles World <br/>
+								Protoma Bangla <br/>
+								Tilottoma Life Style <br/>
+								Tilottoma Design Studio <br/>
+								Tilottoma Ceramics & Sanitary
+							</p>
+						</div>
+					</div>
+					
+					
+					<div class="col-md-1">
+						<div class="f-content">
+							<p class="b-title">BRAND</p>
+							<p class="b-fnav">
+								Toto <br/>
+								Grohe <br/>
+								Nahm <br/>
+								Halfee <br/>
+								Alpha <br/>
+								Beta <br/>
+								Gama <br/>
+								Delta
+							</p>
+						</div>
+					</div> <!-- col -->
+					<div class="col-md-2">
+						<div class="f-content">
+							<p class="b-title">ABOUT US</p>
+							<p class="b-fnav">
+								Mission <br/>
+								Vission <br/>
+								Who we are <br/>
+								What we do <br/>
+								Board of directors<br/>
+								Team<br/>
+								Logo<br/>
+								
+							</p>
+						</div>
+					</div> <!-- col -->
+					<div class="col-md-3">
+						<div class="fo-content">
+							<div class="f-search">
+								<span class="fo-search"></span>
+								<input class="foo-search" type="text" name="search" id="" placeholder="SEARCH">
+							</div>
+							
+								<p class="n-title">NEWS & EVENTS</p>
+								<p class="n-fnav">
+									Exhibiton <br/>
+									Opening <br/>
+									Others <br/>
+								</p>
+								<p class="c-title">CONTACT US </p>
+								<p class="c-fnav">
+									Head office <br/>
+									Store <br/>
+								</p>
+						</div>
+					</div> <!-- col -->
+				</div>
+			</div> <!-- row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="verticle"></div>
+					<hr class="hr">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<p class="copy">&copy; 2015 Tilottoma Bangla Limited. All rights reserved. Design and Developed By Dcastalia</p>	
+				</div>
+				<div class="col-sm-6">
+					<ul class="dis pull-right">
+						<li>Privacy Statement </li>
+						<li>|</li>
+						<li>Disclaimer</li>
+					</ul>
+				</div>
+			</div>
+		</div> <!-- container -->
+	</footer>
+
+
+	
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.jquery.easing.min.js"></script>
+	<script src="js/slippry.min.js"></script>
+	<script src="js/camera.js"></script>
+	<script src="js/jquery.sliphover.min.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<script>
+	$(document).ready( function () {
+		// alert(5);
+		$("#container").sliphover();
+	})
+
+	</script>
+	
+</body>
+</html>
