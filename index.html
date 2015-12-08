@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/slippry.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
 	<link rel="icon" href="images/icons/favicon.png">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -36,7 +37,7 @@
 							<div class="container">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-										<span class="sr-only"><img src="" alt=""></span>
+										<span class="sr-only"></span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
@@ -67,13 +68,13 @@
 		<div class="fluid-container">
 			<ul id="slippry-demo">
 			  <li>
-			    <a href="#slide1"><img src="images/slider/sub-banner.jpg" alt="Welcome to Slippry!"></a>
+			    <a href="#slide1"><img src="images/slider/slider_1.jpg" alt="Welcome to Slippry!"></a>
 			  </li>
 			  <li>
-			    <a href="#slide2"><img src="images/slider/sub-banner_3.jpg"  alt="This is an awesome jQuery slider plugin."></a>
+			    <a href="#slide2"><img src="images/slider/slider_2.jpg"  alt="This is an awesome jQuery slider plugin."></a>
 			  </li>
 			  <li>
-			    <a href="#slide3"><img src="images/slider/sub-banner_4.jpg" alt="Check it out, you are going to <span class='red'>♥</span> it :)"></a>
+			    <a href="#slide3"><img src="images/slider/slider_3.jpg" alt="Check it out, you are going to <span class='red'>♥</span> it :)"></a>
 			  </li>
 			</ul>
 		</div>
@@ -81,50 +82,153 @@
 
 	<!-- Collection Section
 		================================================ -->
-		<section id="dc-collection">
-			<div class="container">
-				<div class="dc-collection-body">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="dc-collection-left">
-								<img src="images/left-1.jpg" alt="" class="left-side">
-								<img src="images/left-2.jpg" alt="" class="left-side-2">
-								<img src="images/left-3.jpg" alt="" class="left-side pull-left" >
-								<img src="images/left-5.jpg" alt="" class="left-side-4 pull-right">
-								<img src="images/left-4.jpg" alt="" class="left-side pull-left">
+	
+	<section id="dc-collection">
+		<div class="container">
+			<div class="row p-margin">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div id="collec-body">
+						<div class="left-side">
+							<div class="left-top">
+								<img src="images/collections/collec_1.jpg" alt="" class="collect-1">
+								<img src="images/collections/collec_2.jpg" alt="" class="collect-2">
+								
 							</div>
-							<div class="dc-collection-right">
-								<article>
-									<p class="dc-title">Collections</p>
-									<p class="dc-description">
-										collection tiles reproduce a sunny range of shades and tones to tlight up interiors with a new and high impact design that gives an effect of contineous movement. <br/><br/>
-
-										Stylishly new floor and wall tiles with wave, gleam and shaded effects that intersect with a unique depth and intensity, thanks to the digital print technology of the Colour Definition System. Hall is the ideal solution for modern bathroom decor.<br/><br/>
-
-										Material: single and double-fixed ceramic tiles.
-										<a href="" class="dc-btn">Read More</a>
-									</p>
-								</article>
+							<div class="left-bottom">
+								<div class="col-left pull-left">
+									<div class="coll-top">
+										<img src="images/collections/collec_3.jpg" alt="" class="collect-3">
+									</div>
+									<div class="coll-bottom">
+										<img src="images/collections/collec_4.jpg" alt="" class="collect-4">
+									</div>
+								</div>
+								<div class="coll-right pull-left">
+									<img src="images/collections/collec_5.jpg" alt="" class="collect-5">
+								</div>
 							</div>
-						</div>
-					</div>
-				</div> <!-- collection body -->
-			</div> <!-- container -->
-		</section> <!-- section -->
+						</div> <!-- left side -->
+						<div class="right-side">
+							<div class="right-content">
+								<p class="collec-title">
+									COLLECTIONS
+								</p>
+								<p class="collec-lead">
+									collection tiles reproduce a sunny range of shades and tones to light up interiors with a new and high impact design that gives an effect of continuous movement. <br/><br/>
+									Stylishly new floor and wall tiles with wave,gleam and shaded effects that intersect with a unique depth and intensity, thanks to the digital print technology of the Color Definition System. Hall is the ideal solution for modern bathroom decor.
+									<br/><br/>
+									Material: single and double-fired ceramic tiles
+								</p>
 
-		<section id="featured-products">
-			<div class="container">
-				<div class="featured-body">
-					<div class="row">
-						<div class="col-md-12">
-							<h3>FEATURED PRODUCTS</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+								<a href="" class="read-more">Read More</a>
+							</div>		
+						</div> <!-- right side -->
+					</div> <!-- collec body -->
+				</div> <!-- col -->
+			</div> <!-- row -->
+		</div> <!-- container -->
+	</section>	
 
-		<section id="dc-brand" data-type="background" data-speed="5">
+	<!-- Products Section
+		================================================ -->
+	
+	<section class="products">
+		<div class="container">
+			<div class="main-products">
+				<div class="row p-margin">
+					<div class="col-md-12">
+						<h3 class="product-title">FEATURED PRODUCTS</h3>
+						<ul class="product-nav">
+							<li><a class="product-active" href="#">TRADE CENTER</a></li>
+							<li><a href="#">TILES WORLD</a></li>
+							<li><a href="#">PROTOMA BANGLA</a></li>
+							<li><a href="#">LIFE STYLE</a></li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+				<div class="row p-margin">
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		  <img src="images/products/product_5.jpg" alt=""/>
+							<p>Naham water coloset Gorgious</p>
+				    		<a href="images/products/product_5.jpg" data-lightbox="example-set" data-title="Naham water coloset Gorgious Naham water coloset Gorgious Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div></a>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_4.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<a href="images/products/product_4.jpg" data-lightbox="example-set" data-title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div></a>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_3.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_6.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_1.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				</div> <!-- row -->
+
+				<div class="row p-margin">
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_13.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_12.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_11.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_10.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_9.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				</div> <!-- row -->
+			</div> <!-- main products -->
+		</div> <!-- container -->
+	</section> <!-- products section -->
+
+	<!-- Brand Section
+	================================================ -->
+
+		<section id="dc-brand" data-type="background" data-speed="77">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -141,6 +245,126 @@
 				</div> <!-- row -->
 			</div> <!-- container -->
 		</section> <!-- section -->
+
+	<!-- FOOTER
+	================================================ -->	
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="footer-content">
+					<div class="col-md-3">
+						<img src="images/footer/logo_footer.png" alt="Footer logo" class="footer-logo">
+						<p class="f-sub">Symbol Of Beauty</p>
+						<div class="address">
+							
+							
+							<span><i class="map"></i></span>
+							<p class="info">
+								Tilottoma Trade center <br/>
+								Mosaic, Floor Tiles & <br/>
+								Waterproofing Materials <br/>
+								Address: 67, Bir Uttam C.R. Dutt Road, <br/>
+								Hatirpool, Dhaka-1205
+							</p>
+							<span><i class="phone"></i></span>
+							<p class="cell">g668808, g673432</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="social">
+							<ul class="social-nav">
+								<li><a href=""><img src="images/footer/Social_icon.png" alt=""></a></li>
+								<li><a href=""><img src="images/footer/Social_icon_2.png" alt=""></a></li>
+								<li><a href=""><img src="images/footer/Social_icon_3.png" alt=""></a></li>
+								<li><a href=""><img src="images/footer/Social_icon_4.png" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="fo-content">
+							<p class="f-title">PRODUCT CENTER <sub>&#9660;</sub></p>
+							<p class="p-fnav">
+								Tilottoma Trade Center <br/>
+								Tilottoma Tiles World <br/>
+								Protoma Bangla <br/>
+								Tilottoma Life Style <br/>
+								Tilottoma Design Studio <br/>
+								Tilottoma Ceramics & Sanitary
+							</p>
+						</div>
+					</div>
+					
+					
+					<div class="col-md-1">
+						<div class="f-content">
+							<p class="b-title">BRAND</p>
+							<p class="b-fnav">
+								Toto <br/>
+								Grohe <br/>
+								Nahm <br/>
+								Halfee <br/>
+								Alpha <br/>
+								Beta <br/>
+								Gama <br/>
+							</p>
+						</div>
+					</div> <!-- col -->
+					<div class="col-md-2">
+						<div class="f-content">
+							<p class="b-title">ABOUT US</p>
+							<p class="b-fnav">
+								Mission <br/>
+								Vission <br/>
+								Who we are <br/>
+								What we do <br/>
+								Board of directors<br/>
+								Team<br/>
+								Logo<br/>
+								
+							</p>
+						</div>
+					</div> <!-- col -->
+					<div class="col-md-3">
+						<div class="fo-content">
+							<div class="f-search">
+								<span class="fo-search"></span>
+								<input class="foo-search" type="text" name="search" id="" placeholder="SEARCH">
+							</div>
+							
+								<p class="n-title">NEWS & EVENTS</p>
+								<p class="n-fnav">
+									Exhibiton <br/>
+									Opening <br/>
+									Others <br/>
+								</p>
+								<p class="c-title">CONTACT US </p>
+								<p class="c-fnav">
+									Head office <br/>
+									Store <br/>
+								</p>
+						</div>
+					</div> <!-- col -->
+				</div>
+			</div> <!-- row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="verticle"></div>
+					<hr class="hr">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<p class="copy">&copy; 2015 Tilottoma Bangla Limited. All rights reserved. Design and Developed By Dcastalia</p>	
+				</div>
+				<div class="col-sm-6">
+					<ul class="dis pull-right">
+						<li>Privacy Statement </li>
+						<li>|</li>
+						<li>Disclaimer</li>
+					</ul>
+				</div>
+			</div>
+		</div> <!-- container -->
+	</footer> <!-- footer -->
 	
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -148,12 +372,15 @@
 	<script src="js/jquery.jquery.easing.min.js"></script>
 	<script src="js/slippry.min.js"></script>
 	<script src="js/camera.js"></script>
+	<!-- // <script src="js/lightbox-plus-jquery.min.js"></script> -->
+	<script src="js/main.js"></script>
+	
 	
 	<script>
 		jQuery(document).ready(function(){
 		  jQuery('#slippry-demo').slippry(
 		  {
-		  	transition: 'kenburns',
+		  	transition: 'fade',
 		  	adaptiveHeight:false,
 		  	captions: 'below',
 		  }
