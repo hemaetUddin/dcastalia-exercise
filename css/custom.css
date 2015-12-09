@@ -384,7 +384,13 @@ i{
 .social-nav li{
 	list-style: none;
 	display: inline;
+	/*padding-left: 20px;*/
+}
+
+.social-nav  a{
+	/*list-style: none;*/
 	padding-left: 20px;
+	
 }
 
 .social-nav li:first-child{
@@ -508,7 +514,7 @@ main{
 
 .banner{
 	
-	background: url('../images/banner.png') 50% no-repeat;
+	/*background: url('../images/banner.png') 50% no-repeat;*/
 	/*background-repeat: no-repeat;*/
 	
     background-position: center;
@@ -653,6 +659,31 @@ main{
 	margin-top: 25px;
 }
 
+
+/*style for social icons*/
+
+i{
+	/*margin-left: 20px; */
+}
+
+
+.ci{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: url('../images/social_sprite.png')no-repeat;
+}
+
+.i.ci:hover{
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	background: url('../images/socials_1.png')no-repeat;
+}
+
+
+.ci.ci-fb			 {background-position: 0 0; }
+.ci.ci-tw    		 {background-position: -40 0; }
 
 
 /*=========Responisve For Product Section========*/

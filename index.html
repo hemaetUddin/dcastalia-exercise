@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	
 	<title>Dcastalia-Exercise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/camera.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/slippry.css">
-	<link rel="stylesheet" href="css/lightbox.css">
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="lightbox/jquery.fancybox.css">
 	<link rel="icon" href="images/icons/favicon.png">
+	
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900' rel='stylesheet' type='text/css'>
 	
 	
@@ -42,7 +44,7 @@
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
-									<a href="" class="navbar-brand"><img src="images/logo_main.png" class="img-responsive" alt=""></a>
+									<a href="index.html" class="navbar-brand"><img src="images/logo_main.png" class="img-responsive" alt=""></a>
 								</div> <!-- navbar-header -->
 								<div class="navbar-collapse collapse">
 									<ul class="nav navbar-nav navbar-right">
@@ -62,23 +64,24 @@
 		</div> <!-- container -->
 	</header><!-- header -->
 
-	<!-- Slider Section
+	<!-- sllider seciton start 
 	================================================ -->
-	<section id="dc-slider">
-		<div class="fluid-container">
-			<ul id="slippry-demo">
-			  <li>
-			    <a href="#slide1"><img src="images/slider/slider_1.jpg" alt="Welcome to Slippry!"></a>
-			  </li>
-			  <li>
-			    <a href="#slide2"><img src="images/slider/slider_2.jpg"  alt="This is an awesome jQuery slider plugin."></a>
-			  </li>
-			  <li>
-			    <a href="#slide3"><img src="images/slider/slider_3.jpg" alt="Check it out, you are going to <span class='red'>♥</span> it :)"></a>
-			  </li>
-			</ul>
-		</div>
-	</section>
+	<div class="fluid_container">
+	    	<div class="camera_wrap camera_emboss" id="camera_wrap_3">
+	            <div data-thumb="" data-src="images/slider/slider_1.jpg">
+	            	<div  style="position:absolute; top:75%; left:5%; background:#000; color:#fff;  width:25%; padding:15px; text-align:center;" id="slider-cap" class="fadeIn camera_effected">SYMBOL OF ULTIMATE BEAUTY </div>
+	            </div>
+	            <div data-thumb="" data-src="images/slider/slider_2.jpg">
+	                <div style="position:absolute; top:75%; left:5%;	background:#000; color:#fff;  width:25%; padding:15px; text-align:center;" class="fadeIn camera_effected">TILOTTOMA BATHROOM FITINGS</div>
+	            </div>
+	            <div data-thumb="" data-src="images/slider/slider_3.jpg">
+	                <div style="position:absolute; top:75%; left:5%;	background:#000; color:#fff;  width:25%; padding:15px; text-align:center;" class="slider-cap fadeIn camera_effected">TILOTTOMA KITCHEN FITINGS</div>
+	            </div>
+	            
+	        </div>
+	    </div>
+
+	<!-- slider section end -->
 
 	<!-- Collection Section
 		================================================ -->
@@ -127,7 +130,7 @@
 				</div> <!-- col -->
 			</div> <!-- row -->
 		</div> <!-- container -->
-	</section>	
+	</section>	<!-- collection section -->
 
 	<!-- Products Section
 		================================================ -->
@@ -149,37 +152,37 @@
 				<div class="row p-margin">
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
-				    		  <img src="images/products/product_5.jpg" alt=""/>
+				    		  <img src="images/products/product_1.jpg" alt=""/>
 							<p>Naham water coloset Gorgious</p>
-				    		<a href="images/products/product_5.jpg" data-lightbox="example-set" data-title="Naham water coloset Gorgious Naham water coloset Gorgious Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div></a>
+				    		<a class="fancybox" href="images/products/thumbnails_1.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
-				    		<img src="images/products/product_4.jpg" alt="">
+				    		<img src="images/products/product_2.jpg" alt="">
 				    		<p>Naham water coloset Gorgious</p>
-				    		<a href="images/products/product_4.jpg" data-lightbox="example-set" data-title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div></a>
+				    		<a class="fancybox" href="images/products/thumbnails_2.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
 				    		<img src="images/products/product_3.jpg" alt="">
 				    		<p>Naham water coloset Gorgious</p>
-				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    		<a class="fancybox" href="images/products/thumbnails_3.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
-				    		<img src="images/products/product_6.jpg" alt="">
+				    		<img src="images/products/product_4.jpg" alt="">
 				    		<p>Naham water coloset Gorgious</p>
-				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    		<a class="fancybox" href="images/products/thumbnails_4.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
-				    		<img src="images/products/product_1.jpg" alt="">
+				    		<img src="images/products/product_5.jpg" alt="">
 				    		<p>Naham water coloset Gorgious</p>
-				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    		<a class="fancybox" href="images/products/thumbnails_5.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				</div> <!-- row -->
@@ -187,37 +190,37 @@
 				<div class="row p-margin">
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
-				    		<img src="images/products/product_13.jpg" alt="">
+				    		<img src="images/products/product_6.jpg" alt="">
 				    		<p>Naham water coloset Gorgious</p>
-				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    		<a class="fancybox" href="images/products/thumbnails_6.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
-				    		<img src="images/products/product_12.jpg" alt="">
+				    		<img src="images/products/product_7.jpg" alt="">
 				    		<p>Naham water coloset Gorgious</p>
-				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    		<a class="fancybox" href="images/products/thumbnails_7.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
-				    		<img src="images/products/product_11.jpg" alt="">
+				    		<img src="images/products/product_8.jpg" alt="">
 				    		<p>Naham water coloset Gorgious</p>
-				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
-				    	</div> <!-- product body -->
-				    </div> <!-- col -->
-				    <div class="col-md-5 col-sm-3">
-				    	<div class="products-body">
-				    		<img src="images/products/product_10.jpg" alt="">
-				    		<p>Naham water coloset Gorgious</p>
-				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    		<a class="fancybox" href="images/products/thumbnails_8.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				    <div class="col-md-5 col-sm-3">
 				    	<div class="products-body">
 				    		<img src="images/products/product_9.jpg" alt="">
 				    		<p>Naham water coloset Gorgious</p>
-				    		<div class="max"><img src="images/maximize_icon.jpg" id="imagelightbox" alt=""></div>
+				    		<a class="fancybox" href="images/products/thumbnails_9.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
+				    	</div> <!-- product body -->
+				    </div> <!-- col -->
+				    <div class="col-md-5 col-sm-3">
+				    	<div class="products-body">
+				    		<img src="images/products/product_10.jpg" alt="">
+				    		<p>Naham water coloset Gorgious</p>
+				    		<a class="fancybox" href="images/products/thumbnails_10.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><div class="max"><img src="images/maximize_icon.jpg" alt=""></div></a>
 				    	</div> <!-- product body -->
 				    </div> <!-- col -->
 				</div> <!-- row -->
@@ -228,7 +231,7 @@
 	<!-- Brand Section
 	================================================ -->
 
-		<section id="dc-brand" data-type="background" data-speed="77">
+		<section id="dc-brand" data-type="background" data-speed="75">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -368,24 +371,42 @@
 	
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.mobile.customized.min.js"></script>
-	<script src="js/jquery.jquery.easing.min.js"></script>
-	<script src="js/slippry.min.js"></script>
-	<script src="js/camera.js"></script>
-	<!-- // <script src="js/lightbox-plus-jquery.min.js"></script> -->
+	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/camera.min.js'></script>
+    <script src="lightbox/jquery.fancybox.js"></script>
 	<script src="js/main.js"></script>
+
 	
 	
 	<script>
-		jQuery(document).ready(function(){
-		  jQuery('#slippry-demo').slippry(
-		  {
-		  	transition: 'fade',
-		  	adaptiveHeight:false,
-		  	captions: 'below',
-		  }
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_3').camera({
+				height: '550px',
+				loader: 'bar',
+				loaderColor: '#ea2328',
+				navigation: true,
+				pagination: true,
+				overlayer: true,
+				thumbnails: false,
+				imagePath: '../images/',
+				time: 4500
+			});
 
-		  	);
+			// code for products image lightbox
+			$(".fancybox").fancybox({
+			    helpers : {
+			        overlay : {
+			            css : {
+			                'background' : 'rgba(58, 42, 45, 0.95)'
+			            }
+			        }
+			    }
+			});
+
+			// lightbox end
+
 		});
 	</script>
 </body>
