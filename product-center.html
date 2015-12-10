@@ -7,12 +7,16 @@
 	<link rel="stylesheet" href="css/camera.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/slippry.css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="lightbox/jquery.fancybox.css">
 	<link rel="icon" href="images/icons/favicon.png">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900' rel='stylesheet' type='text/css'>
-	
-	
+	<style>
+		.col-md-10, .col-md-2{
+			padding-left: 0px !important;
+		}
+
+	</style>
 </head>
 <body>
 <header id="header">
@@ -32,7 +36,7 @@
 			</div> --><!-- col -->
 			<div class="col-sm-12">
 				<div class="navbar-wrapper">
-					<div class="navbar navbar" role="navigation">
+					<div class="navbar navbar navbar-default" role="navigation">
 						<div class="container">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,9 +47,9 @@
 								</button>
 								<a href="index.html" class="navbar-brand"><img src="images/logo_main.png" class="img-responsive" alt=""></a>
 							</div> <!-- navbar-header -->
-							<div class="navbar-collapse collapse">
+							<div class="navbar-collapse collapse dnav">
 								<ul class="nav navbar-nav navbar-right">
-									<li class="active"><a href="product-center.html">PRODUCT CENTER</a></li>
+									<li><a href="product-center.html">PRODUCT CENTER</a></li>
 									<li><a href="#">BRAND</a></li>
 									<li><a href="#">COLLETIONS</a></li>
 									<li><a href="#">ABOUT</a></li>
@@ -66,24 +70,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10">
-					<div class="banner">
-							<div class="camera_wrap camera_emboss" id="camera_wrap_3">
-						        <div data-thumb="" data-src="images/slider/slider_1.jpg">
-						        	<div  style="position:absolute; top:75%; left:5%; background:#000; color:#fff;  width:25%; padding:15px; text-align:center;" id="slider-cap" class="fadeIn camera_effected">SYMBOL OF ULTIMATE BEAUTY </div>
-						        </div>
-						        <div data-thumb="" data-src="images/slider/slider_2.jpg">
-						            <div style="position:absolute; top:75%; left:5%;	background:#000; color:#fff;  width:25%; padding:15px; text-align:center;" class="fadeIn camera_effected">TILOTTOMA BATHROOM FITINGS</div>
-						        </div>
-						        <div data-thumb="" data-src="images/slider/slider_3.jpg">
-						            <div style="position:absolute; top:75%; left:5%;	background:#000; color:#fff;  width:25%; padding:15px; text-align:center;" class="slider-cap fadeIn camera_effected">TILOTTOMA KITCHEN FITINGS</div>
-						        </div>
-						        
-						    </div>
+					<div class="banner" style="height:350px;">
+						
+					    <div><img src="images/pcenterSlider/pc-slider_1.jpg" alt=""></div>
+					    <div><img src="images/pcenterSlider/pc-slider_2.jpg" alt=""></div>
+					    <div><img src="images/pcenterSlider/pc-slider_3.jpg" alt=""></div>
+  	
 					</div>
 				</div> <!-- col -->
-				<div class="col-md-2 no-gutter">
-					<div class="readmore">
-						<p>Choose your desired set of collective tiles form our adorable pick</p>
+				<div class="col-md-2">
+					<div class="tabo">
+						<img src="images/read-more.jpg" alt="">
+						<p>Choose your desired set of collective tiles form our adorable pick
+							
+						</p>
+						<a href="" class="read-more">Read More</a>
+
 					</div>
 				</div> <!-- col -->
 			</div> <!-- row -->
@@ -110,50 +112,33 @@
 			<div class="row p-margin">
 				<div class="col-xs-12 col-md-4 col-sm-3">
 					<div class="product-body">
-						<img src="images/product/product_1.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
+						<img src="images/product/product_1.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES 
+							<a class="fancybox" href="images/products/thumbnails_1.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
 						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
 					</div> <!-- product body -->
 				</div> <!-- col -->
 
 				<div class="col-xs-12 col-md-4 col-sm-3">
 					<div class="product-body">
-						<img src="images/product/product_2.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
+						<img src="images/product/product_2.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES 
+							<a class="fancybox" href="images/products/thumbnails_2.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
 						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
 					</div> <!-- product body -->
 				</div> <!-- col -->
 
 				<div class="col-xs-12 col-md-4 col-sm-3">
 					<div class="product-body">
-						<img src="images/product/product_3.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
-						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
-					</div> <!-- product body -->
-				</div> <!-- col -->
-			</div> <!-- row -->
-
-			<div class="row p-margin">
-				<div class="col-xs-12 col-md-4 col-sm-3">
-					<div class="product-body">
-						<img src="images/product/product_4.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
-						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
-					</div> <!-- product body -->
-				</div> <!-- col -->
-
-				<div class="col-xs-12 col-md-4 col-sm-3">
-					<div class="product-body">
-						<img src="images/product/product_5.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
-						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
-					</div> <!-- product body -->
-				</div> <!-- col -->
-
-				<div class="col-xs-12 col-md-4 col-sm-3">
-					<div class="product-body">
-						<img src="images/product/product_6.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
+						<img src="images/product/product_3.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES 
+							<a class="fancybox" href="images/products/thumbnails_3.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
 						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
 					</div> <!-- product body -->
 				</div> <!-- col -->
@@ -162,24 +147,68 @@
 			<div class="row p-margin">
 				<div class="col-xs-12 col-md-4 col-sm-3">
 					<div class="product-body">
-						<img src="images/product/product_7.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
+						<img src="images/product/product_4.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES 
+							<a class="fancybox" href="images/products/thumbnails_4.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
 						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
 					</div> <!-- product body -->
 				</div> <!-- col -->
 
 				<div class="col-xs-12 col-md-4 col-sm-3">
 					<div class="product-body">
-						<img src="images/product/product_8.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
+						<img src="images/product/product_5.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES 
+							<a class="fancybox" href="images/products/thumbnails_5.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
+						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
+					</div> <!-- product body -->
+				</div> <!-- col -->
+
+				<div class="col-xs-12 col-md-4 col-sm-3">
+					<div class="product-body">
+						<img src="images/product/product_6.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES
+							<a class="fancybox" href="images/products/thumbnails_6.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
+						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
+					</div> <!-- product body -->
+				</div> <!-- col -->
+			</div> <!-- row -->
+
+			<div class="row p-margin">
+				<div class="col-xs-12 col-md-4 col-sm-3">
+					<div class="product-body">
+						<img src="images/product/product_7.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES 
+							<a class="fancybox" href="images/products/thumbnails_7.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
+						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
+					</div> <!-- product body -->
+				</div> <!-- col -->
+
+				<div class="col-xs-12 col-md-4 col-sm-3">
+					<div class="product-body">
+						<img src="images/product/product_8.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES
+							<a class="fancybox" href="images/products/thumbnails_8.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
 						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
 					</div> <!-- product body -->
 				</div> <!-- col -->
 				
 				<div class="col-xs-12 col-md-4 col-sm-3">
 					<div class="product-body">
-						<img src="images/product/product_9.jpg" alt="">
-						<p class="p-title">KITCHEN TILES <a href="#"><span class="expend"></span></a><a href="#"><span class="like"></span></a></p>
+						<img src="images/product/product_9.jpg" alt="" title="KITCHEN TILES">
+						<p class="p-title">KITCHEN TILES 
+							<a class="fancybox" href="images/products/thumbnails_9.jpg" data-fancybox-group="gallery" title="Naham water coloset Gorgious"><span class="expend"></span></a>
+							<a href="#"><span class="like"></span></a>
+						</p>
 						<p class="lead">this bathroom apllience has got reputation for simplistic modern shape & chrome effects</p>
 					</div> <!-- product body -->
 				</div> <!-- col -->
@@ -309,23 +338,40 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.mobile.customized.min.js"></script>
 	<script src="js/jquery.jquery.easing.min.js"></script>
-	<script src="js/slippry.min.js"></script>
-	<script src="js/camera.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="lightbox/jquery.fancybox.js"></script>
+	<script src="js/jquery.sliphover.min.js"></script>
+	
+
 	
 	<script>
 		jQuery(function(){
 			
-			jQuery('#camera_wrap_3').camera({
-				height: '400px',
-				loader: false,
-				loaderColor: '#ea2328',
-				navigation: true,
-				pagination: true,
-				overlayer: true,
-				thumbnails: false,
-				imagePath: '../images/',
-				time: 4500
+			// sliphover
+			$('.product-body').sliphover();
+			// end
+
+			// code for products image lightbox
+			$(".fancybox").fancybox({
+			    helpers : {
+			        overlay : {
+			            css : {
+			                'background' : 'rgba(58, 42, 45, 0.95)'
+			            }
+			        }
+			    }
 			});
+
+			// lightbox end
+
+			jQuery('.banner').slick({
+				accessibility:true,
+				autoplay:true,
+				arrows: false,
+				
+				});
+
+			
 
 			
 
